@@ -6,10 +6,6 @@ public class Produc_Consum{
 		Productor p=new Productor(cola);
 		Consumidor c=new Consumidor(cola);
 		p.start();
-		c.start();	
-		
+		c.start();		
 	}
-	
-
-
 }

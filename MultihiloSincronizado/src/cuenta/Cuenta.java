@@ -5,16 +5,18 @@ public class Cuenta {
 	private int saldo;  
 	private int maximoSaldo; 
 	
+	//contructor con saldo inicial y maximo
 	public Cuenta(int valorSaldo, int maximo){
 		this.saldo=valorSaldo;
 		this.maximoSaldo=maximo;
 	}
 
-	//metodos
+	//get
 	public synchronized int obtenerSaldo(){
 		return saldo; //no hay numero 
 	}
-
+	
+	//ingresar
 	public synchronized void ingresar(int valorOperacion, String nombre){
 		
 		saldo=saldo+valorOperacion;
@@ -27,8 +29,10 @@ public class Cuenta {
 		}	
 	}
 	
-	public synchronized void reintegro(int valorOperacion){
+	//registrar
+	public synchronized void reintegro(int valorOperacion, String nombre){
 		saldo=saldo-valorOperacion;	
+		System.out.println(nombre+ " saca: "+valorOperacion);
 		while (saldo<0) { 
 			try {
 				System.out.println("Saldo insuficiente:");
