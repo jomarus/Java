@@ -1,5 +1,3 @@
-package procesosjava;
-
 import java.io.*;
 public class EjemploLectura{
 	public static void main (String[] args){

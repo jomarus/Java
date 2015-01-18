@@ -1,10 +1,8 @@
 
-package procesosjava;
-
 public class Ejemplo1{
 public static void main(String[] args) {
 	Runtime r=Runtime.getRuntime();
-	String comando="notepad";
+	String comando="gedit";
 	Process p;
 
 	try{

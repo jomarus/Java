@@ -1,9 +1,8 @@
-
 import java.io.*;
 public class Ejemplo2{
 public static void main(String[] args) {
 	Runtime r=Runtime.getRuntime();
-	String comando="cmd /c dir";
+	String comando="ls";
 	Process p=null;
 
 	try{

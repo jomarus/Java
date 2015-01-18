@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class sumador{
@@ -19,11 +18,9 @@ public class sumador{
 		num2=Integer.parseInt(texto2);
 		
 		resultado=num1+num2;
-                
+		
 		System.out.println("Cadena escrita desde el sumador : "+resultado);
-
-            
-            
+		
 		}catch (Exception e) {e.printStackTrace();}
 
 	}//fin main

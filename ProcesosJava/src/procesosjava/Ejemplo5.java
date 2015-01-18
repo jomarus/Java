@@ -1,4 +1,3 @@
-
 import java.io.*;
 public class Ejemplo5 {
 	public static void main(String[] args){
@@ -12,7 +11,7 @@ public class Ejemplo5 {
 		p=r.exec(comando);
 		//escritura - envio entrada a date
 		OutputStream os=p.getOutputStream();
-		os.write("34\n".getBytes());
+		os.write("44\n".getBytes());
 		os.flush(); //vacio buffer
 		
 		OutputStream os2=p.getOutputStream();
@@ -25,7 +24,7 @@ public class Ejemplo5 {
 		String linea;
 		while ((linea=br.readLine())!=null)//lee una linea
 			System.out.println(linea);
-                        br.close();
+		br.close();
 		} catch(Exception e) {
 			System.out.println ("Error en "+comando);
 			e.printStackTrace();

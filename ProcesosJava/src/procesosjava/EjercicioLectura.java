@@ -1,5 +1,3 @@
-package procesosjava;
-
 import java.util.Scanner;
 
 
