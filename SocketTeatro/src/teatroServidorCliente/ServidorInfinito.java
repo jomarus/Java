@@ -59,7 +59,7 @@ class ServidorInfinito {
 				System.out.println("Recibido >> "+mensaje);
 				
 				
-				if(mensaje.equals("menu")){
+				if(mensaje.equals("0")){
 					System.out.println("Enviar >> "+menu);
 					flujo.writeUTF(menu);
 				}
