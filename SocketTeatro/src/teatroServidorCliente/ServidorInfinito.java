@@ -40,6 +40,7 @@ class ServidorInfinito {
 			flujo2 = new DataInputStream( aux2 );
 			
 			menu="****BIENVENIDOS A LA RESERVA DE ENTRADAS****\n"
+					+ "0. Menu\n"
 					+ "1. Reservar entradas lat. izq\n"
 					+ "2. Reservar entradas lat. derch\n"
 					+ "3. Reservar entradas Galeria\n"
